@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <!-- Linking Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Linking personal CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #a3a3a3;">
+          <h1>Dion Leung</h1>
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="navbar-collapse justify-content-end">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">About me<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="html/portfolio.html">Portfolio</a>
+              <a class="nav-item nav-link" href="html/contact.html">Contact me!</a>
+            </div>
+            <a href="https://twitter.com/DionTheDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+              data-show-count="false">Follow @DionTheDev</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Welcome Mat modal -->
+    <div class="modal fade" id="WelcomeMat" tabindex="-1" role="dialog" aria-labelledby="WelcomeMatLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="WelcomeMatLabel">Welcome to my page!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            If this is your first time here, thank you for coming! I just wanted to let you know that I'm still working
+            on my portfolio, so please forgive me for it having some rough edges. I'm still learning and growing every
+            day, and while I don't expect that to ever change, right now in the middle of my full-stack web-development
+            bootcamp I have a ton more to learn! Just wanted to give you a heads up in case something isn't functional
+            quite yet. Please feel free to reach out to me, though, check out my contact page!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About me section -->
+    <!-- Header -->
+    <div class="row">
+      <div class="col-12">
+        <h3>About me</h3>
+      </div>
+    </div>
+    <!-- Image, caption, and blurb. For float, comment out lines 44-46, 48-58, and 61. Line 43 should be col 10, and Line 62 should be col 2 -->
+    <div class="row">
+      <div class="col-3">
+        <!-- Image -->
+        <div class="row float-left">
+          <div class="col-12">
+            <img class="img-fluid float-left" src="photos/Headshot.jpg" alt="headshot">
+          </div>
+        </div>
+        <!-- Caption -->
+        <div class="row float-left">
+          <div class="col-12 align-content-center">
+            <small class="text-muted">Photo credit to <a href="https://www.dalenanguyen.net/" target="_blank">Dalena
+                Nguyen</a></small>
+          </div>
+        </div>
+      </div>
+      <!-- Blurb -->
+      <div class="col-8">
+        <p>Hi! My name is Dion Leung, and I've been a Seattle area native my whole life. I grew up and lived in Kent for
+          the first 18 years of my life, then moved to Seattle where I attended the University of Washington, earning a
+          degree in Civil and Environmental Engineering. A couple of years into my career, I was feeling stuck and
+          pigeon-holed, unable to advance further without an advanced degree. I decided to switch things up completely
+          and pursue a career in web-development and here I am!</p>
+        <p>In my time as a junior web developer, I have been able to learn a lot of both back-end and front-end
+          development. I still feel drawn towards back-end systems, in particular database management, but am also
+          exploring data-science and other analytical professions. In my spare time I enjoy spending time outdoors (only
+          if I take my allergy medicine!), playing sports like basketball, soccer, volleyball, and baseball, and making
+          progress on my seemingly neverending list of shows to watch.</p>
+      </div>
+      <div class="col-1">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+  <!-- LinkedIn JS -->
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+  <!-- Custom javascript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

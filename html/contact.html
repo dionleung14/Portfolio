@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact info</title>
+    <!-- Linking Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Linking personal CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-md navbar-light" style="background-color: #a3a3a3;">
+                    <h1>Dion Leung</h1>
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <div class="navbar-collapse justify-content-end">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="../index.html">About me</a>
+                            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-item nav-link active" href="contact.html">Contact me!<span
+                                    class="sr-only">(current)</span></a>
+                        </div>
+                        <a href="https://twitter.com/DionTheDev?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                            data-size="large" data-show-count="false">Follow @DionTheDev</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- About me section -->
+        <!-- Short blurb -->
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <h3>Hit me up!</h3>
+                <p>Have any questions? Want to collaborate together? Secretly dying to know my favorite song? Send me a
+                    secure message below and I'll get back to you as soon as I can!</p>
+                <p>You can find also find me on LinkedIn <a href="https://www.linkedin.com/in/leungdion/" target="_blank">here</a>, or send me an email directly at <a href="#">dioncleung@gmail.com</a>.</p>
+            </div>
+            <!-- Empty column for spacing -->
+            <div class="col-md-5 col-sm-0">
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="row pb-4">
+            <div class="col-12">
+                <form>
+                    <!-- Name, Email, and phone number -->
+                    <div class="row">
+                        <!-- Name -->
+                        <div class="col-lg-4 col-md-12">
+                            <div class="form-group">
+                                <label for="viewerName">Name</label>
+                                <input type="name" class="form-control" id="viewerName">
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-lg-5 col-md-12">
+                            <div class="form-group">
+                                <label for="inputEmail">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">I'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                        </div>
+                        <!-- Phone number -->
+                        <div class="col-lg-3 col-md-12">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="phonenumber" class="form-control" id="phoneNumber">
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="message">Message</label>
+                            <input type="message" class="form-control" id="message">
+                        </div>
+                    </div>
+
+                    <!-- Preferred method of contact checkboxes -->
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="phoneCall">
+                                <label class="form-check-label" for="phoneCall">I prefer getting a call!</label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <input type="checkbox" class="form-check-input" id="phoneMessage">
+                            <label class="form-check-label" for="phoneMessage">I prefer getting a text!</label>
+                        </div>
+                        <div class="col-3">
+                            <input type="checkbox" class="form-check-input" id="emailContact">
+                            <label class="form-check-label" for="emailContact">I prefer getting an email!</label>
+                        </div>
+                        <!-- Empty column for spacing -->
+                        <div class="col-3">
+                        </div>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom javascript -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

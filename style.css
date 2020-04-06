@@ -1,0 +1,103 @@
+body {
+    background-image: url("photos/light.jpg");
+}
+
+.container {
+    background-color: #f1f1f1;
+}
+
+/* a {
+    background-color: gray;
+    color: white;
+} */
+/* 
+.container .float-left {
+    margin: 1em;
+} */
+
+.thumbnails-DCL {
+    display: flex;
+    justify-items: space-around;
+    flex-wrap: wrap;
+    /* align-content: wrap; */
+}
+
+.img-thumbnail-DCL {
+    /* border: 2px blue solid; */
+    width: 250px;
+    height: 250px;
+}
+
+.thumbnail-container-DCL {
+    /* border: 1px red solid; */
+    width: 250px;
+    height: 250px;
+    position: relative;
+    /* display: inline; */
+}
+
+.title-button-container {
+    display: none;
+}
+
+/* .modal-content-DCL {
+    width: 75%;
+} */
+
+.application-screenshots {
+    width: 100%;
+}
+
+.project-title {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    background-color: #a3a3a3;
+    color: white;
+    padding: 4px;
+    /* border-radius: 5px; */
+    /* display: none; */
+}
+
+.thumbnail-label-DCL {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    /* display: flex;
+    align-items: center; */
+    color: white;
+    background-color: #a3a3a3;
+    /* display: none; */
+    /* overflow-inline: clip; */
+    transition: all .9s ease-in-out;
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-collapse .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-collapse .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
+/* targets the portfolio thumbnails to center align at 640px, not working */
+    #portfolio-thumbnails div img {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Linking Boostrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Linking personal CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #a3a3a3;">
+            <h1>Dion Leung</h1>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="navbar-collapse justify-content-end">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">About me</a>
+                <a class="nav-item nav-link active" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="contact.html">Contact me!</a>
+              </div>
+              <a href="https://twitter.com/DionTheDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @DionTheDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </nav>
+      </div>
+    </div>
+
+    <!-- Portfolio section -->
+    <!-- Portfolio heading -->
+    <div class="row">
+      <div class="col-12">
+        <h3>Portfolio</h3>
+        <p>Check out some of my work! Hover over the image to see the title of the project, and click the "More details" button for... more details!</p>
+      </div>
+    </div>
+    <!-- Portfolio thumbnails -->
+    <div class="row p-4" id="portfolio-thumbnails">
+      <div class="col-12 p-4 thumbnails-DCL">
+        <!-- Pokemon go virtual dex -->
+        <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="../photos/Portfolio thumbnails/pokegodex.jpg" alt="thumbnail">
+          <div class="title-button-container">
+            <h5 class="project-title rounded border border-info">Pok&eacute;mon GO Virtual Dex</h5>
+            <button type="button" class="btn btn-outline-info btn-sm thumbnail-label-DCL" data-toggle="modal" data-target="#PokeGoDexModal">More details</button>
+          </div>
+        </div>
+        <div class="modal fade" id="PokeGoDexModal" tabindex="-1" role="dialog" aria-labelledby="PokeGoDexTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="PokeGoDexTitle">Pok&eacute;mon GO Virtual Pok&eacute;Dex</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="application-screenshots" src="../photos/Application screenshots/pokegodex.png" alt="screenshot">
+                <p>
+                Describe this project!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-dark" data-dismiss="modal">Close</button>
+                <a href="https://dionleung14.github.io/Pokemon-GO-Virtual-Dex/" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Check it out!</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Password Generator -->
+        <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="../photos/Portfolio thumbnails/password-generator.jpg" alt="thumbnail">
+          <div class="title-button-container">
+            <h5 class="project-title rounded border border-info">Password Generator</h5>
+            <button type="button" class="btn btn-outline-info btn-sm thumbnail-label-DCL" data-toggle="modal" data-target="#PasswordGeneratorModal">More details</button>
+          </div>
+        </div>
+        <div class="modal fade" id="PasswordGeneratorModal" tabindex="-1" role="dialog" aria-labelledby="PokeGoDexTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="PasswordGeneratorTitle">Password Generator</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="application-screenshots" src="../photos/Application screenshots/PasswordGenerator.JPG" alt="screenshot">
+                <p>
+                Describe this project!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-dark" data-dismiss="modal">Close</button>
+                <a href="https://dionleung14.github.io/Password-Generator/" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Check it out!</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seattle quiz -->
+        <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="../photos/Portfolio thumbnails/timed-quiz.jpg" alt="thumbnail">
+          <div class="title-button-container">
+            <h5 class="project-title rounded border border-info">Seattle Quiz</h5>
+            <button type="button" class="btn btn-outline-info btn-sm thumbnail-label-DCL" data-toggle="modal" data-target="#TimedQuiz">More details</button>
+          </div>
+        </div>
+        <div class="modal fade" id="TimedQuiz" tabindex="-1" role="dialog" aria-labelledby="TimedQuizTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TimedQuizTitle">Seattle Quiz</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="application-screenshots" src="http://placekitten.com/200/300" alt="screenshot">
+                <p>
+                Describe this project!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-dark" data-dismiss="modal">Close</button>
+                <a href="https://dionleung14.github.io/Timed-Quiz/" target="_blank"><button type="button" class="btn btn-sm btn-outline-info" disabled>Check it out!</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL " src="../photos/Portfolio thumbnails/seattle-skyline.jpg" alt="thumbnail">
+          <a class="thumbnail-label-DCL" href="https://dionleung14.github.io/Timed-Quiz/" target="_blank">
+            <p>Pokemon Quiz</p>
+          </a>
+        </div> -->
+
+        <!-- Workday Scheduler -->
+        <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="../photos/Portfolio thumbnails/workday-scheduler.jpg" alt="thumbnail">
+          <div class="title-button-container">
+            <h5 class="project-title rounded border border-info">Workday Scheduler</h5>
+            <button type="button" class="btn btn-outline-info btn-sm thumbnail-label-DCL" data-toggle="modal" data-target="#WorkdayScheduler">More details</button>
+          </div>
+        </div>
+        <div class="modal fade" id="WorkdayScheduler" tabindex="-1" role="dialog" aria-labelledby="WorkdaySchedulerTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="WorkdaySchedulerTitle">Workday Scheduler</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="application-screenshots" src="../photos/Application screenshots/WorkdayScheduler.JPG" alt="screenshot">
+                <p>
+                Describe this project!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-dark" data-dismiss="modal">Close</button>
+                <a href="https://dionleung14.github.io/Workday-Scheduler/" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Check it out!</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL img-thumbnail-DCL" src="../photos/Portfolio thumbnails/planner.png" alt="thumbnail">
+          <a class="thumbnail-label-DCL" href="https://dionleung14.github.io/Workday-Scheduler/" target="_blank">
+            <p>Workday Scheduler</p>
+          </a>
+        </div> -->
+
+        <!-- Weather Dashboard -->
+        <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="../photos/Portfolio thumbnails/weather-dashboard.jpg" alt="thumbnail">
+          <div class="title-button-container">
+            <h5 class="project-title rounded border border-info">Weather Dashboard</h5>
+            <button type="button" class="btn btn-outline-info btn-sm thumbnail-label-DCL" data-toggle="modal" data-target="#WeatherDashboard">More details</button>
+          </div>
+        </div>
+        <div class="modal fade" id="WeatherDashboard" tabindex="-1" role="dialog" aria-labelledby="WeatherDashboardTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="WeatherDashboardTitle">Weather Dashboard</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="application-screenshots" src="../photos/Application screenshots/WeatherDashboard.JPG" alt="screenshot">
+                <p>
+                Describe this project!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-dark" data-dismiss="modal">Close</button>
+                <a href="https://dionleung14.github.io/Weather-Dashboard/" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Check it out!</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="../photos/Portfolio thumbnails/weather-icon.png" alt="thumbnail">
+          <a class="thumbnail-label-DCL" href="https://dionleung14.github.io/Weather-Dashboard/" target="_blank">
+            <p>Weather Dashboard</p>
+          </a>
+        </div> -->
+
+        <!-- Scratch projects -->
+        <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="../photos/Portfolio thumbnails/ScratchCat.jpg" alt="thumbnail">
+          <div class="title-button-container">
+            <h5 class="project-title rounded border border-info">Scratch Projects</h5>
+            <button type="button" class="btn btn-outline-info btn-sm thumbnail-label-DCL" data-toggle="modal" data-target="#ScratchProjects">More details</button>
+          </div>
+        </div>
+        <div class="modal fade" id="ScratchProjects" tabindex="-1" role="dialog" aria-labelledby="ScratchProjectsTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ScratchProjectsTitle">Scratch Projects</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="application-screenshots" src="../photos/Application screenshots/PasswordGenerator.JPG" alt="screenshot">
+                <p>
+                Describe this project!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-dark" data-dismiss="modal">Close</button>
+                <a href="https://scratch.mit.edu/users/NAFlipper/" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Check it out!</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="../photos/Portfolio thumbnails/ScratchCat.png" alt="thumbnail">
+          <p class="thumbnail-label-DCL"><a class="thumbnail-label-link-DCL" href="https://scratch.mit.edu/users/NAFlipper/" target="_blank">Scratch projects!</a></p>
+        </div> -->
+
+        <!-- Placeholder -->
+        <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="../photos/Application .gifs/readme-generator.gif" alt="thumbnail">
+          <div class="title-button-container">
+            <h5 class="project-title rounded border border-info">README Generator</h5>
+            <button type="button" class="btn btn-outline-info btn-sm thumbnail-label-DCL" data-toggle="modal" data-target="#ReadMeGenerator">More details</button>
+          </div>
+        </div>
+        <div class="modal fade" id="ReadMeGenerator" tabindex="-1" role="dialog" aria-labelledby="ReadMeGeneratorTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ReadMeGeneratorTitle">README.md Generator</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="application-screenshots" src="../photos/Application .gifs/readme-generator.gif" alt="screenshot">
+                <p>
+                Describe this project!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-dark" data-dismiss="modal">Close</button>
+                <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-info" disabled>Check it out!</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="thumbnail-container-DCL">
+          <img class="img-fluid img-thumbnail img-thumbnail-DCL" src="https://place-hold.it/250" alt="thumbnail">
+          <div class="title-button-container">
+            <h5 class="project-title rounded border border-info">Don't mind me, I'm a placeholder</h5>
+            <button type="button" class="btn btn-outline-info btn-sm thumbnail-label-DCL" data-toggle="modal" data-target="#Placeholder2">More details</button>
+          </div>
+        </div>
+        <div class="modal fade" id="Placeholder2" tabindex="-1" role="dialog" aria-labelledby="Placeholder2Title" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="Placeholder2Title">Placeholder</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="application-screenshots" src="http://placekitten.com/200/300" alt="screenshot">
+                <p>
+                Describe this project!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-dark" data-dismiss="modal">Close</button>
+                <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-info">Check it out!</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Add a hover that shows the title of the project upon hovering the thumbnail. on each project page, add a link back to the portfolio!!! -->
+
+  <!-- Bootstrap javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Custom javascript -->
+  <script src="../script.js"></script>
+</body>
+</html>

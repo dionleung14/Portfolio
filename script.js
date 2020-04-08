@@ -15,15 +15,24 @@ $(document).ready(function(){
 
 // $(".thumbnail-container-DCL").on("mouseenter", showMoreBtn(){
 $(".thumbnail-container-DCL").on("mouseenter", function(){
-    var thumbnailButton = $(this).children(":last")
-    console.log(thumbnailButton)
-    thumbnailButton.css("display", "block")
+    const thumbnailImage = $(this).children(":first");
+    const thumbnailTitleDetails = $(this).children(":last");
+    const imageSource = thumbnailImage.attr("src");
+    const imageSourceSplit = imageSource.split("/");
+    const projectName = imageSourceSplit[3].split(".")[0];
+    thumbnailImage.attr("src", `../photos/Application .gifs/${projectName}.gif`);
+    thumbnailTitleDetails.css("display", "block");
 })
 
 // $(".thumbnail-container-DCL").on("mouseleave", hideMoreBtn(){
 $(".thumbnail-container-DCL").on("mouseleave", function(){
-    var thumbnailButton = $(this).children(":last")
-    thumbnailButton.css("display", "none")
+    const thumbnailImage = $(this).children(":first")
+    const thumbnailTitleDetails = $(this).children(":last")
+    const imageSource = thumbnailImage.attr("src")
+    const imageSourceSplit = imageSource.split("/")
+    const projectName = imageSourceSplit[3].split(".")[0]
+    thumbnailImage.attr("src", `../photos/Portfolio thumbnails/${projectName}.jpg`)
+    thumbnailTitleDetails.css("display", "none")
 })
 
 
